@@ -1,1 +1,1 @@
-document.body.remove();
+console.log("true");
