@@ -66,8 +66,9 @@ document.querySelector(".te1").innerHTML = 60 - minutes;
 document.querySelector(".te3").innerHTML = 60 - seconds;
 document.querySelector(".te2").innerHTML = 24-displayHours+5;
 document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
-if(displayHours == 1 && period == "صباحًا"){
+if(displayHours >= 1 && period == "صباحًا"){
     document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelector(".te2").innerHTML = 34-displayHours+5;
     if(displayHours == 6 && period == "مساءً"){
         document.querySelector(".tim").remove();
     }
