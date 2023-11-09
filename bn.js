@@ -64,7 +64,6 @@ const timeString = `${displayHours}:${minutes} ${period}`;
 // console.log('الوقت الحالي في المملكة العربية السعودية هو: ' + timeString);
 document.querySelector(".te1").innerHTML = 60 - minutes;
 document.querySelector(".te3").innerHTML = 60 - seconds;
-document.querySelector(".te2").innerHTML = 24-displayHours+5;
 document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
 if(displayHours >= 1 && period == "صباحًا"){
     document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
@@ -74,7 +73,7 @@ if(displayHours >= 1 && period == "مساءً"){
     document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
     document.querySelector(".te2").innerHTML = 6-displayHours;
 }
-if(displayHours == 6 && period == "مساءً"){
-        document.querySelector(".tim").remove();
+if(displayHours >= 6 && period == "مساءً"){
+       document.querySelector(".te2").innerHTML = 24-displayHours+5;
     }
     }, 1000);
