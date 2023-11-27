@@ -1,5 +1,5 @@
 
-       document.querySelectorAll("..product-detials__desc h4")[0].innerHTML = `
+       document.querySelectorAll(".product-detials__desc h4")[0].innerHTML = `
     <style>
         .tim, .pa, .pa2{
             width: 100%;
