@@ -16,6 +16,8 @@
         document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
         document.querySelectorAll(".list--clear li")[0].innerHTML = ` `;
         document.querySelectorAll(".list--clear li")[1].style.width = `89%`;
+                        document.querySelectorAll(".list--clear li")[1].style.cssText = `position: relative;
+    top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
     .modal#special_offer_modal .modal-body .list.offer-steps li:before{
@@ -125,6 +127,8 @@ if(displayHours >= 8 && period == "مساءً"){
         document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
         document.querySelectorAll(".list--clear li")[0].innerHTML = ` `;
         document.querySelectorAll(".list--clear li")[1].style.width = `89%`;
+                        document.querySelectorAll(".list--clear li")[1].style.cssText = `position: relative;
+    top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
     .modal#special_offer_modal .modal-body .list.offer-steps li:before{
