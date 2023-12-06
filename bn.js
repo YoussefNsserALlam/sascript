@@ -88,24 +88,28 @@ const timeString = `${displayHours}:${minutes} ${period}`;
 document.querySelector(".te1").innerHTML = 60 - minutes;
 document.querySelector(".te3").innerHTML = 60 - seconds;
 // document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
-if(displayHours >= 1 && period == "صباحًا"){
+if(displayHours >= 1 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 6-displayHours;
+    document.querySelector(".te2").innerHTML = 5-displayHours;
+}
+if(displayHours >= 6 && period == "مساءً"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelector(".te2").innerHTML = 10-displayHours;
+}
+if(displayHours >= 11 && period == "صباحًا"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelector(".te2").innerHTML = 15-displayHours;
 }
 if(displayHours >= 6 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 16-displayHours;
+    document.querySelector(".te2").innerHTML = 10-displayHours;
 }
-if(displayHours >= 1 && period == "مساءً"){
+if(displayHours >= 1 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 4-displayHours;
-}
-if(displayHours >= 4 && period == "مساءً"){
-    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 14-displayHours;
+    document.querySelector(".te2").innerHTML = 5-displayHours;
 }
 if(displayHours >= 8 && period == "مساءً"){
-       document.querySelector(".te2").innerHTML = 18-displayHours;
+       document.querySelector(".te2").innerHTML = 12-displayHours;
     }
     }, 1000);
 }, 1150);
@@ -174,7 +178,7 @@ if(displayHours >= 8 && period == "مساءً"){
     <h4>دقيقه</h4>
     <h4>ساعة</h4>
 </div>`;
-    setInterval(() => {
+setInterval(() => {
         //حصول على تاريخ ووقت محليين
 const now = new Date();
 
@@ -198,24 +202,28 @@ const timeString = `${displayHours}:${minutes} ${period}`;
 document.querySelector(".te1").innerHTML = 60 - minutes;
 document.querySelector(".te3").innerHTML = 60 - seconds;
 // document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
-if(displayHours >= 1 && period == "صباحًا"){
+if(displayHours >= 1 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 6-displayHours;
+    document.querySelector(".te2").innerHTML = 5-displayHours;
+}
+if(displayHours >= 6 && period == "مساءً"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelector(".te2").innerHTML = 10-displayHours;
+}
+if(displayHours >= 11 && period == "صباحًا"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelector(".te2").innerHTML = 15-displayHours;
 }
 if(displayHours >= 6 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 16-displayHours;
+    document.querySelector(".te2").innerHTML = 10-displayHours;
 }
-if(displayHours >= 1 && period == "مساءً"){
+if(displayHours >= 1 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 4-displayHours;
-}
-if(displayHours >= 4 && period == "مساءً"){
-    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 14-displayHours;
+    document.querySelector(".te2").innerHTML = 5-displayHours;
 }
 if(displayHours >= 8 && period == "مساءً"){
-       document.querySelector(".te2").innerHTML = 18-displayHours;
+       document.querySelector(".te2").innerHTML = 12-displayHours;
     }
     }, 1000);
 }, 1150);
