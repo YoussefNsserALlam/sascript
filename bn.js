@@ -4,6 +4,7 @@
             malrt[i].addEventListener("click", function (){
                 
                 setTimeout(() => {
+                        document.querySelectorAll(".list--clear li")[0].remove()
                     document.querySelector(".header__icon").innerHTML = `
                     
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -108,6 +109,7 @@ if(displayHours >= 8 && period == "مساءً"){
         document.querySelectorAll(".mobile-webview-hide a")[1].addEventListener("click", function (){
             
                 setTimeout(() => {
+                        document.querySelectorAll(".list--clear li")[0].remove()
                     document.querySelector(".header__icon").innerHTML = `
                     
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
