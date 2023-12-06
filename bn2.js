@@ -1,4 +1,4 @@
-document.querySelectorAll(".product-offer")[0].remove();        
+
 let malrt = document.querySelectorAll(".product-footer a");
         for(let i =0; i<malrt.length; i++){
             malrt[i].addEventListener("click", function (){
@@ -227,3 +227,4 @@ if(displayHours >= 8 && period == "مساءً"){
        }, 1000);
    }, 1550);
         })
+document.querySelectorAll(".product-offer")[0].remove();      
