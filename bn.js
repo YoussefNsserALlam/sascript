@@ -17,6 +17,9 @@
         document.querySelectorAll(".list--clear li")[1].style.width = `89%`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .modal#special_offer_modal .modal-body .list.offer-steps li:before{
+            display: none !important;
+        }
         .tim, .pa, .pa2{
             width: 100%;
             display: flex;
@@ -122,6 +125,9 @@ if(displayHours >= 8 && period == "مساءً"){
         document.querySelectorAll(".list--clear li")[1].style.width = `89%`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .modal#special_offer_modal .modal-body .list.offer-steps li:before{
+            display: none !important;
+        }
         .tim, .pa, .pa2{
             width: 100%;
             display: flex;
