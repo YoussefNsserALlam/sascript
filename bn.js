@@ -102,5 +102,5 @@ if(displayHours >= 8 && period == "مساءً"){
        document.querySelector(".te2").innerHTML = 18-displayHours;
     }
     }, 1000);
-}, 1150);
+}, 1300);
 })
