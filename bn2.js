@@ -1,4 +1,5 @@
-        let malrt = document.querySelectorAll(".product-footer a");
+document.querySelectorAll(".product-offer")[0].remove();        
+let malrt = document.querySelectorAll(".product-footer a");
         for(let i =0; i<malrt.length; i++){
             malrt[i].addEventListener("click", function (){
                 
