@@ -112,7 +112,7 @@ if(displayHours >= 8 && period == "مساءً"){
        document.querySelector(".te2").innerHTML = 12-displayHours;
     }
     }, 1000);
-}, 1150);
+}, 1250);
 })
         }
         document.querySelectorAll(".mobile-webview-hide a")[1].addEventListener("click", function (){
@@ -226,5 +226,5 @@ if(displayHours >= 8 && period == "مساءً"){
        document.querySelector(".te2").innerHTML = 12-displayHours;
     }
     }, 1000);
-}, 1150);
+}, 1250);
 })
