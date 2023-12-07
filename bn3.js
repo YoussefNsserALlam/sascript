@@ -1,7 +1,7 @@
 
-let malrt = document.querySelectorAll(".s-product-card-content-footer button");
-        for(let i =0; i<malrt.length; i++){
-            malrt[i].addEventListener("click", function (){
+let malrta = document.querySelectorAll(".s-product-card-content-footer button");
+        for(let i =0; i<malrta.length; i++){
+            malrta[i].addEventListener("click", function (){
                 setTimeout(() => {
    document.querySelectorAll(".s-modal-header-content p")[0].innerHTML = `اشتري ثمن كيلو 125 جرام<span style="font-size: 20px; color:red;"> بقيمة 349 </span>  بدلا من 426 ريال واحصل على شحن مجاني  <br>(تضيفهم للسلة ويتفعل مع العرض تلقائي)
 <br>
@@ -109,7 +109,7 @@ let malrt = document.querySelectorAll(".s-product-card-content-footer button");
        }, 1000);
        document.getElementById("product_49390870").remove();
         document.querySelectorAll(".s-offer-modal-footer p")[0].remove()
-   }, 2550);
+   }, 4000);
 })
         }
 
@@ -221,5 +221,5 @@ let malrt = document.querySelectorAll(".s-product-card-content-footer button");
        }, 1000);
        document.getElementById("product_49390870").remove();
         document.querySelectorAll(".s-offer-modal-footer p")[0].remove()
-   }, 2550);
+   }, 4000);
         })
