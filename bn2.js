@@ -259,6 +259,9 @@ document.querySelectorAll(".product-offer")[0].remove();
     font-weight: 700;
     font-size: 20px !important;
         }
+        .tim .te p{
+        font-size: 27px !important;
+    }
     </style>
 <div class="pa2"><h1>متبقى على نهاية العرض</h1></div>
 <div class="tim">
