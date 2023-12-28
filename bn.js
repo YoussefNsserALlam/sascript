@@ -19,6 +19,9 @@
     top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .tim .te p{
+        font-size: 20px !important;
+    }
     .modal#special_offer_modal .modal-body .list.offer-steps li:before{
             display: none !important;
         }
@@ -64,7 +67,7 @@
     <h4>دقيقه</h4>
     <h4>ساعة</h4>
 </div>`;
-    setInterval(() => {
+     setInterval(() => {
         //حصول على تاريخ ووقت محليين
 const now = new Date();
 
@@ -82,34 +85,33 @@ let displayHours = hours % 12 || 12;
 
 // بناء نص الوقت
 const timeString = `${displayHours}:${minutes} ${period}`;
-
 // طباعة الوقت
 // console.log('الوقت الحالي في المملكة العربية السعودية هو: ' + timeString);
-document.querySelector(".te1").innerHTML = 60 - minutes;
-document.querySelector(".te3").innerHTML = 60 - seconds;
+document.querySelectorAll(".te1")[0].innerHTML = 60 - minutes;
+document.querySelectorAll(".te3")[0].innerHTML = 60 - seconds;
 // document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
 if(displayHours >= 1 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 5-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
 }
 if(displayHours >= 6 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 10-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
 }
 if(displayHours >= 11 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 15-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 15-displayHours;
 }
 if(displayHours >= 6 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 10-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
 }
 if(displayHours >= 1 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 5-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
 }
 if(displayHours >= 8 && period == "مساءً"){
-       document.querySelector(".te2").innerHTML = 12-displayHours;
+       document.querySelectorAll(".te2")[0].innerHTML = 12-displayHours;
     }
     }, 1000);
 }, 1250);
@@ -133,6 +135,9 @@ if(displayHours >= 8 && period == "مساءً"){
     top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .tim .te p{
+        font-size: 20px !important;
+    }
     .modal#special_offer_modal .modal-body .list.offer-steps li:before{
             display: none !important;
         }
@@ -178,7 +183,7 @@ if(displayHours >= 8 && period == "مساءً"){
     <h4>دقيقه</h4>
     <h4>ساعة</h4>
 </div>`;
-setInterval(() => {
+ setInterval(() => {
         //حصول على تاريخ ووقت محليين
 const now = new Date();
 
@@ -196,41 +201,45 @@ let displayHours = hours % 12 || 12;
 
 // بناء نص الوقت
 const timeString = `${displayHours}:${minutes} ${period}`;
-
 // طباعة الوقت
 // console.log('الوقت الحالي في المملكة العربية السعودية هو: ' + timeString);
-document.querySelector(".te1").innerHTML = 60 - minutes;
-document.querySelector(".te3").innerHTML = 60 - seconds;
+document.querySelectorAll(".te1")[0].innerHTML = 60 - minutes;
+document.querySelectorAll(".te3")[0].innerHTML = 60 - seconds;
 // document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
 if(displayHours >= 1 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 5-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
 }
 if(displayHours >= 6 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 10-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
 }
 if(displayHours >= 11 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 15-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 15-displayHours;
 }
 if(displayHours >= 6 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 10-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
 }
 if(displayHours >= 1 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 5-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
 }
 if(displayHours >= 8 && period == "مساءً"){
-       document.querySelector(".te2").innerHTML = 12-displayHours;
+       document.querySelectorAll(".te2")[0].innerHTML = 12-displayHours;
     }
     }, 1000);
 }, 1250);
 })
 
-        document.querySelectorAll(".product-detials__desc p")[3].innerHTML = `
-    <style>
+        document.querySelectorAll(".product-detials__desc p")[3].innerHTML = ` <style>
+        .tim .te p{
+        font-size: 20px !important;
+    }
+    .modal#special_offer_modal .modal-body .list.offer-steps li:before{
+            display: none !important;
+        }
         .tim, .pa, .pa2{
             width: 100%;
             display: flex;
@@ -241,7 +250,7 @@ if(displayHours >= 8 && period == "مساءً"){
     font-size: 20px !important;
         }
         .tim .te{
-            width: 100px;
+            width: 67px;
             height: 107px;
             border-radius: 5px;
             color: red;
@@ -253,6 +262,7 @@ if(displayHours >= 8 && period == "مساءً"){
             flex-direction: column;
             font-weight: 700;
             font-size: 20px !important;
+            margin:10px;
         }
         .pa2 h1{
             margin: 10px;
@@ -260,18 +270,18 @@ if(displayHours >= 8 && period == "مساءً"){
     font-size: 20px !important;
         }
     </style>
-<div class="pa2"><h1>متبقى على نهاية العرض</h1></div>
+<div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
 <div class="tim">
-    <div class="te"><p class="te3"></p></div>
+    <div class="te"><p class="te3">2</p></div>
     
-    <div class="te te1"><p class="te1"></p></div>
-    <div class="te"><p class="te2"></p></div>
+    <div class="te te1"><p class="te1">1</p></div>
+    <div class="te"><p class="te2">2</p></div>
 </div>
 <div class="pa">
     <h4>ثانيه</h4>
     <h4>دقيقه</h4>
     <h4>ساعة</h4>
-</div>`
+</div>`;
     setInterval(() => {
         //حصول على تاريخ ووقت محليين
 const now = new Date();
@@ -292,30 +302,30 @@ let displayHours = hours % 12 || 12;
 const timeString = `${displayHours}:${minutes} ${period}`;
 // طباعة الوقت
 // console.log('الوقت الحالي في المملكة العربية السعودية هو: ' + timeString);
-document.querySelector(".te1").innerHTML = 60 - minutes;
-document.querySelector(".te3").innerHTML = 60 - seconds;
+document.querySelectorAll(".te1")[0].innerHTML = 60 - minutes;
+document.querySelectorAll(".te3")[0].innerHTML = 60 - seconds;
 // document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
 if(displayHours >= 1 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 5-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
 }
 if(displayHours >= 6 && period == "مساءً"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 10-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
 }
 if(displayHours >= 11 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 15-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 15-displayHours;
 }
 if(displayHours >= 6 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 10-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
 }
 if(displayHours >= 1 && period == "صباحًا"){
     // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 5-displayHours;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
 }
 if(displayHours >= 8 && period == "مساءً"){
-       document.querySelector(".te2").innerHTML = 12-displayHours;
+       document.querySelectorAll(".te2")[0].innerHTML = 12-displayHours;
     }
     }, 1000);
