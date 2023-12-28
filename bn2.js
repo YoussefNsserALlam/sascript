@@ -229,8 +229,10 @@ if(displayHours >= 8 && period == "مساءً"){
         })
 document.querySelectorAll(".product-offer")[0].remove();      
 
-        document.querySelectorAll(".product-detials__desc p")[3].innerHTML = `
-    <style>
+        document.querySelectorAll(".product-detials__desc p")[3].innerHTML = ` <style>
+    .modal#special_offer_modal .modal-body .list.offer-steps li:before{
+            display: none !important;
+        }
         .tim, .pa, .pa2{
             width: 100%;
             display: flex;
@@ -241,7 +243,7 @@ document.querySelectorAll(".product-offer")[0].remove();
     font-size: 20px !important;
         }
         .tim .te{
-            width: 100px;
+            width: 67px;
             height: 107px;
             border-radius: 5px;
             color: red;
@@ -253,22 +255,20 @@ document.querySelectorAll(".product-offer")[0].remove();
             flex-direction: column;
             font-weight: 700;
             font-size: 20px !important;
+            margin:10px;
         }
         .pa2 h1{
             margin: 10px;
     font-weight: 700;
     font-size: 20px !important;
         }
-        .tim .te p{
-        font-size: 27px !important;
-    }
     </style>
-<div class="pa2"><h1>متبقى على نهاية العرض</h1></div>
+<div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
 <div class="tim">
-    <div class="te"><p class="te3"></p></div>
+    <div class="te"><p class="te3">2</p></div>
     
-    <div class="te te1"><p class="te1"></p></div>
-    <div class="te"><p class="te2"></p></div>
+    <div class="te te1"><p class="te1">1</p></div>
+    <div class="te"><p class="te2">2</p></div>
 </div>
 <div class="pa">
     <h4>ثانيه</h4>
