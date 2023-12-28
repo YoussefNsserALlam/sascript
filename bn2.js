@@ -18,6 +18,9 @@ let malrt = document.querySelectorAll(".product-footer a");
     top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .tim .te p{
+        font-size: 20px !important;
+    }
     .modal#special_offer_modal .modal-body .list.offer-steps li:before{
             display: none !important;
         }
@@ -131,6 +134,9 @@ if(displayHours >= 8 && period == "مساءً"){
        top: -51px;`;
            document.querySelectorAll(".list--clear li")[1].innerHTML = `
        <style>
+       .tim .te p{
+        font-size: 20px !important;
+    }
        .modal#special_offer_modal .modal-body .list.offer-steps li:before{
                display: none !important;
            }
@@ -229,6 +235,9 @@ if(displayHours >= 8 && period == "مساءً"){
 document.querySelectorAll(".product-offer")[0].remove();      
 
         document.querySelectorAll(".product-detials__desc p")[3].innerHTML = ` <style>
+        .tim .te p{
+        font-size: 20px !important;
+    }
     .modal#special_offer_modal .modal-body .list.offer-steps li:before{
             display: none !important;
         }
