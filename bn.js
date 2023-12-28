@@ -57,10 +57,10 @@
     </style>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
 <div class="tim">
-    <div class="te"><p class="te3">2</p></div>
+    <div class="te"><p class="te3"></p></div>
     
-    <div class="te te1"><p class="te1">1</p></div>
-    <div class="te"><p class="te2">2</p></div>
+    <div class="te te1"><p class="te1"></p></div>
+    <div class="te"><p class="te2"></p></div>
 </div>
 <div class="pa">
     <h4>ثانيه</h4>
@@ -174,10 +174,10 @@ if(displayHours >= 8 && period == "مساءً"){
     </style>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
 <div class="tim">
-    <div class="te"><p class="te3">2</p></div>
+    <div class="te"><p class="te3"></p></div>
     
-    <div class="te te1"><p class="te1">1</p></div>
-    <div class="te"><p class="te2">2</p></div>
+    <div class="te te1"><p class="te1"></p></div>
+    <div class="te"><p class="te2"></p></div>
 </div>
 <div class="pa">
     <h4>ثانيه</h4>
@@ -274,10 +274,10 @@ if(displayHours >= 8 && period == "مساءً"){
     </style>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
 <div class="tim">
-    <div class="te"><p class="te3">2</p></div>
+    <div class="te"><p class="te3"></p></div>
     
-    <div class="te te1"><p class="te1">1</p></div>
-    <div class="te"><p class="te2">2</p></div>
+    <div class="te te1"><p class="te1"></p></div>
+    <div class="te"><p class="te2"></p></div>
 </div>
 <div class="pa">
     <h4>ثانيه</h4>
