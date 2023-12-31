@@ -135,7 +135,7 @@ if(displayHours >= 8 && period == "مساءً"){
        document.querySelectorAll(".te2")[1].innerHTML = 12-displayHours;
     }
     }, 1000);
-}, 1850);
+}, 2350);
 })
         }
         document.querySelectorAll(".mobile-webview-hide a")[1].addEventListener("click", function (){
@@ -272,7 +272,7 @@ if(displayHours >= 8 && period == "مساءً"){
        document.querySelectorAll(".te2")[1].innerHTML = 12-displayHours;
     }
     }, 1000);
-}, 1850);
+},2350);
 })
 
         document.querySelectorAll(".product-detials__desc p")[3].innerHTML = ` <style>
