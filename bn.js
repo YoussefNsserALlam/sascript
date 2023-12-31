@@ -5,7 +5,7 @@
                 
                 setTimeout(() => {
                        let mydiv = document.createElement("div");
-                    mydiv.classList.add("owl-item active");
+                    mydiv.classList.add("owl-item");
                     document.querySelectorAll(".owl-stage")[1].appendChild(mydiv);
                     mydiv.innerHTML = `<div class="owl-item active" style="width: 161.833px; margin-left: 15px;"><div class="product product--light product-323750460">
                                     <a href="https://waeacksa.com/دورة-الثراء-وبناء-الرواد/p323750460" class="product--light__thumb ">
