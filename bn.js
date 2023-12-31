@@ -33,6 +33,9 @@
     top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .product{
+            width:200px;
+        }
     .tim .te p{
         font-size: 20px !important;
     }
@@ -164,6 +167,9 @@ if(displayHours >= 8 && period == "مساءً"){
     top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .product{
+            width:200px;
+        }
     .tim .te p{
         font-size: 20px !important;
     }
@@ -264,6 +270,9 @@ if(displayHours >= 8 && period == "مساءً"){
 })
 
         document.querySelectorAll(".product-detials__desc p")[3].innerHTML = ` <style>
+        .product{
+            width:200px;
+        }
         .tim .te p{
         font-size: 20px !important;
     }
