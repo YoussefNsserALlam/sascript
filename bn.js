@@ -33,6 +33,9 @@
     top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .slider--light .owl-stage-outer .owl-stage{
+            overflow: auto;
+        }
     .product{
             width:200px;
         }
@@ -167,6 +170,9 @@ if(displayHours >= 8 && period == "مساءً"){
     top: -51px;`;
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
+    .slider--light .owl-stage-outer .owl-stage{
+            overflow: auto;
+        }
     .product{
             width:200px;
         }
@@ -270,6 +276,9 @@ if(displayHours >= 8 && period == "مساءً"){
 })
 
         document.querySelectorAll(".product-detials__desc p")[3].innerHTML = ` <style>
+        .slider--light .owl-stage-outer .owl-stage{
+            overflow: auto;
+        }
         .product{
             width:200px;
         }
