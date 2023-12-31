@@ -4,7 +4,21 @@
             malrt[i].addEventListener("click", function (){
                 
                 setTimeout(() => {
-                       
+                       let mydiv = document.createElement("div");
+                    mydiv.classList.add("owl-item active");
+                    document.querySelectorAll(".owl-stage")[1].appendChild(mydiv);
+                    mydiv.innerHTML = `<div class="owl-item active" style="width: 161.833px; margin-left: 15px;"><div class="product product--light product-323750460">
+                                    <a href="https://waeacksa.com/دورة-الثراء-وبناء-الرواد/p323750460" class="product--light__thumb ">
+                                                                                    <img src="https://cdn.salla.sa/bEGEz/qqDQFHM3m3M9x4aKcDy4YQgvwgfr2lDjEwfn4dyb.jpg" alt="دورة الربح من التجارة الالكترونية الاحترافية">
+                                                                            </a>
+                                    <div class="product--light__meta">
+                                        <a href="https://waeacksa.com/دورة-الثراء-وبناء-الرواد/p323750460">دورة الربح من التجارة الالكترونية الاحتر...</a>
+                                        <div>
+                                            <p><span class="price-before">٥٠٠ ر.س</span><span class="price-after">١٢٠ ر.س</span></p>
+                                            <a href="#" class="offer-item-select add_to_cart_btn" data-product-id="ZYPRQox" data-referee-page="offer-modal" data-price="120" data-currency="SAR"></a>
+                                        </div>
+                                    </div>
+                                </div></div>`;
                     document.querySelector(".header__icon").innerHTML = `
                     
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -121,7 +135,21 @@ if(displayHours >= 8 && period == "مساءً"){
         document.querySelectorAll(".mobile-webview-hide a")[1].addEventListener("click", function (){
             
                 setTimeout(() => {
-                        
+                        let mydiv = document.createElement("div");
+                    mydiv.classList.add("owl-item active");
+                    document.querySelectorAll(".owl-stage")[1].appendChild(mydiv);
+                    mydiv.innerHTML = `<div class="owl-item active" style="width: 161.833px; margin-left: 15px;"><div class="product product--light product-323750460">
+                                    <a href="https://waeacksa.com/دورة-الثراء-وبناء-الرواد/p323750460" class="product--light__thumb ">
+                                                                                    <img src="https://cdn.salla.sa/bEGEz/qqDQFHM3m3M9x4aKcDy4YQgvwgfr2lDjEwfn4dyb.jpg" alt="دورة الربح من التجارة الالكترونية الاحترافية">
+                                                                            </a>
+                                    <div class="product--light__meta">
+                                        <a href="https://waeacksa.com/دورة-الثراء-وبناء-الرواد/p323750460">دورة الربح من التجارة الالكترونية الاحتر...</a>
+                                        <div>
+                                            <p><span class="price-before">٥٠٠ ر.س</span><span class="price-after">١٢٠ ر.س</span></p>
+                                            <a href="#" class="offer-item-select add_to_cart_btn" data-product-id="ZYPRQox" data-referee-page="offer-modal" data-price="120" data-currency="SAR"></a>
+                                        </div>
+                                    </div>
+                                </div></div>`;
                     document.querySelector(".header__icon").innerHTML = `
                     
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
