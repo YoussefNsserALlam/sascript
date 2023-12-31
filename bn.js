@@ -34,10 +34,10 @@
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
     .slider--light .owl-stage-outer .owl-stage{
-            overflow: auto;
+            overflow: auto !important;
         }
     .product{
-            width:200px;
+            width:200px !important;
         }
     .tim .te p{
         font-size: 20px !important;
@@ -171,10 +171,10 @@ if(displayHours >= 8 && period == "مساءً"){
         document.querySelectorAll(".list--clear li")[1].innerHTML = `
     <style>
     .slider--light .owl-stage-outer .owl-stage{
-            overflow: auto;
+            overflow: auto !important;
         }
     .product{
-            width:200px;
+            width:200px !important;
         }
     .tim .te p{
         font-size: 20px !important;
