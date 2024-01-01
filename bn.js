@@ -16,6 +16,8 @@
     <br>
     واحصل على الدورة الثالثه <span style="font-size: 20px; color:blck;">مجاناً</span>
     <br>
+    الحق ولا تفوت فرصة نهاية العام
+    <br>
 ( تضيفهم للسلة ويتفعل معاك العرض تلقائي )`
     
         document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
@@ -136,6 +138,8 @@ document.querySelectorAll(".header__title p")[0].innerHTML = ` اشتري دور
     400 ريال
     <br>
     واحصل على الدورة الثالثه <span style="font-size: 20px; color:blck;">مجاناً</span>
+    <br>
+    الحق ولا تفوت فرصة نهاية العام
     <br>
 ( تضيفهم للسلة ويتفعل معاك العرض تلقائي )`
     
