@@ -1,5 +1,4 @@
-      
-      let malrt = document.querySelectorAll(".product-footer a");
+     let malrt = document.querySelectorAll(".product-footer a");
         for(let i =0; 0<malrt.length; i++){
             malrt[i].addEventListener("click", function (){
                 
@@ -14,7 +13,7 @@
     document.querySelectorAll(".header__title p")[0].innerHTML = `  اشتري دورتين<span style="font-size: 20px; color:blck;"> بـ 218 فقط</span>  بدال من 
     400 ريال
     <br>
-     واحصل على الدورة الثالثه من اختيارك مجاناً<span style="font-size: 20px; color:blck;">مجاناً</span>
+     واحصل على الدورة الثالثه من اختيارك <span style="font-size: 20px; color:blck;">مجاناً </span>
     <br>
     الحق ولا تفوت فرصة نهاية العام
     <br>
@@ -137,7 +136,7 @@ if(displayHours >= 8 && period == "مساءً"){
 document.querySelectorAll(".header__title p")[0].innerHTML = ` اشتري دورتين<span style="font-size: 20px; color:blck;"> بـ 218 فقط</span>  بدال من 
     400 ريال
     <br>
-     واحصل على الدورة الثالثه من اختيارك مجاناً<span style="font-size: 20px; color:blck;">مجاناً</span>
+     واحصل على الدورة الثالثه من اختيارك <span style="font-size: 20px; color:blck;">مجاناً </span>
     <br>
     الحق ولا تفوت فرصة نهاية العام
     <br>
