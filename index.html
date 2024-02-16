@@ -1,133 +1,231 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    *{
-        direction: rtl;
-    }
-.alrt{
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <!-- <link rel="stylesheet" href="css/master.css" /> -->
+  </head>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
     width: 100%;
-    background-color: #00000033;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.alrt p {
-    text-align: center;
+.box , .box2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-origin: right center;
+  animation: test infinite  5s;
 }
-.al-2{
-    width: 90%;
-    background-color: white;
-    height: 400px;
+@keyframes test{
+    0%{
+    transform: none;
+    }
+    50%{
+    transform: translateX(-100%) rotateY(-180deg);
+    }
+    100%{
+    transform: none;
+    }
+}
+.box .face , .box2 .face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  backface-visibility: hidden;
+}
+.box .front, .box2 .front {
+  background-color: red;
+}
+.box .back {
+  background-color: green;
+  transform: rotateY(180deg);
+}
+.box img, .box2 img{
+    box-shadow: 2px 1px 20px black;
+}
+.box3{
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    background-color: #0000005e;
+    position: fixed;
+    top: 0;
+    height: 0;
+    overflow: hidden;
 }
-
-.tim, .pa, .pa2{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            color: red;
-            font-weight: 700;
-    font-size: 20px !important;
-        }
-        .tim .te{
-            width: 67px;
-            height: 107px;
-            border-radius: 5px;
-            color: red;
-            font-size: 25px;
-            box-shadow: 0px 0px 10px #00000066;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-            font-weight: 700;
-            font-size: 20px !important;
-            margin:10px;
-        }
-        .pa2 h1{
-            margin: 10px;
-    font-weight: 700;
-    font-size: 20px !important;
-        }
-        
-</style>
-<body>
-    <div class="alrt">
-        <div class="al-2">
-            <h3>عرض نهاية السنه لا تفوت فرصتك.</h3>
-            <p>تقدر تاخذ دورة الربح من التجارة الالكترونية الاحترافية وكورس احتراف التسويق المتكامل بـ249 فقط بدال من 309 ريال ( تضيفهم للسلة ويتفعل معك العرض تلقائي)</p>
-            <div class="pa2"><h1></h1></div>
-            <div class="tim">
-                <div class="te"><p class="te3">2</p></div>
+.alra{
+    width: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 19px #f5deb399;
+    height: 0;
+    overflow: hidden;
+}
+.myactiv{
+    width: 80%;
+    opacity: 1;
+    height: 200px;
+    transition: .5s;
+}
+.esm{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+.esm img{
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px #00000040;
+    margin: 14px;
+}
+.l-r{
+    width: 98%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.l-r div{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.loc{
+    position: absolute;
+    top: 40%;
+    left: 88%;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-88%, -40%);
+    cursor: pointer;
+}
+.fa-star{
+    color: yellow;
+}
+  </style>
+  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="container">
+      <div class="box">
+        <img src="https://cdn.salla.sa/ObKxq/8AH7R313E7Z8kRNJWUknTpd1YRyy1QuDGiEqdATv.jpg" class="face front" alt="">
+        <img src="https://cdn.salla.sa/ObKxq/41OmMMlJNrB4mdxLTGOwUDgeRupaCJrZuMOyIGv6.png" class="face back" alt="">
+      </div>
+    </div>
+    <button>hq</button>
+    <div class="box3">
+        <div class="loc"> X</div>
+        <div class="l-r">
+            <div>></div>
+            <div> < </div>
+        </div>
+        <div class="alra myactiv">
+            <div class="esm">
+                <h4>
+                يوسف علام 
+                <br>
+                <br>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </h4>
+            <img src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png" alt="">
+        </div>
+        <br>
+        <div class="tx-1"><p>العطر ممتاااز جدا جدا</p></div>
+        <br>
+        </div>
+        <div class="alra">
+            <div class="esm">
+                <h4>
+                    <div>
+                ابراهيم محمد
+            </div>
+                <br>
+                <br>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 
-                <div class="te te1"><p class="te1">1</p></div>
-                <div class="te"><p class="te2">2</p></div>
-            </div>
-            <div class="pa">
-                <h4>ثانيه</h4>
-                <h4>دقيقه</h4>
-                <h4>ساعة</h4>
-            </div>
+                </h4>
+            <img src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png" alt="">
+        </div>
+        <br>
+        <div class="tx-1"><p>عطر رائع ماشاء الله</p></div>
+        <br>
         </div>
     </div>
     <script>
-        let myAlert = document.querySelector(".alrt");
-myAlert.style.height = window.innerHeight + "px";
-
-setInterval(() => {
-        //حصول على تاريخ ووقت محليين
-const now = new Date();
-
-// الحصول على ساعة من التاريخ
-let hours = now.getHours();
-
-// الحصول على دقائق من التاريخ
-let minutes = now.getMinutes();
-let seconds = now.getSeconds();
-// الحصول على اليوم (AM أو PM) استنادًا إلى قيمة الساعات
-const period = hours >= 12 ? 'مساءً' : 'صباحًا';
-
-// تحويل الساعات إلى صيغة 12 ساعة
-let displayHours = hours % 12 || 12;
-
-// بناء نص الوقت
-const timeString = `${displayHours}:${minutes} ${period}`;
-
-// طباعة الوقت
-// console.log('الوقت الحالي في المملكة العربية السعودية هو: ' + timeString);
-document.querySelector(".te1").innerHTML = 60 - minutes;
-document.querySelector(".te3").innerHTML = 60 - seconds;
-document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
-if(displayHours >= 1 && period == "صباحًا"){
-    document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 6-displayHours;
-}
-if(displayHours >= 6 && period == "صباحًا"){
-    document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 16-displayHours;
-}
-if(displayHours >= 1 && period == "مساءً"){
-    document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 4-displayHours;
-}
-if(displayHours >= 4 && period == "مساءً"){
-    document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
-    document.querySelector(".te2").innerHTML = 14-displayHours;
-}
-if(displayHours >= 8 && period == "مساءً"){
-       document.querySelector(".te2").innerHTML = 18-displayHours;
+        var pageLength = Math.max(
+  document.body.scrollHeight, document.body.offsetHeight, 
+  document.documentElement.clientHeight, document.documentElement.scrollHeight, 
+  document.documentElement.offsetHeight
+);
+let click = 0;
+let loc = document.querySelector(".loc");
+document.querySelector("button").addEventListener("click", function (){
+    click++;
+    if(click == 1){
+        let ara = document.querySelector(".box3");
+ara.style.height = `${pageLength}px`;
     }
-    }, 1000);
-    
+    loc.addEventListener("click", function(){
+    click = 0;
+        let ara = document.querySelector(".box3");
+ara.style.height = 0;
+})
+let left = document.querySelectorAll(".l-r div")[0];
+let right = document.querySelectorAll(".l-r div")[1];
+let slcAllr = document.querySelectorAll(".alra");
+let myclic = 0;
+left.addEventListener("click", function(){
+    myclic++
+    for(let i = 0; i < slcAllr.length; i++){
+    slcAllr[i].classList.remove("myactiv");
+    slcAllr[myclic].classList.add("myactiv");
+}
+})
+right.addEventListener("click", function(){
+    myclic--
+    for(let i = 0; i < slcAllr.length; i++){
+    slcAllr[i].classList.remove("myactiv");
+    slcAllr[myclic].classList.add("myactiv");
+}
+})
+})
     </script>
-</body>
+  </body>
 </html>
