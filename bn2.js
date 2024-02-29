@@ -12,10 +12,11 @@
 </svg>`;
      document.querySelectorAll(".header__title p")[0].innerHTML = `<span style="
         color: #9E9FA5;
-        font-size: .775rem !important;
+        font-size: 1rem !important;
         font-family: emoji;
-    ">اشتري عطرين بسعر عطر واحد +توصيل مجاناً</span>
-    </span>`
+        position: relative;
+        top: 10px;
+    ">اشتري عطرين بسعر عطر واحد +توصيل مجاناً</span>`;
        
         document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
         document.querySelectorAll(".list--clear li")[0].innerHTML = ` `;
@@ -57,6 +58,7 @@
             margin: 10px;
     font-weight: 700;
     font-size: 20px !important;
+    font-family: 'DINNextLTArabic-Bold';
         }
     </style>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
@@ -133,10 +135,11 @@ if(displayHours >= 8 && period == "مساءً"){
    </svg>`;
        document.querySelectorAll(".header__title p")[0].innerHTML = `<span style="
         color: #9E9FA5;
-        font-size: .775rem !important;
+        font-size: 1rem !important;
         font-family: emoji;
-    ">اشتري عطرين بسعر عطر واحد +توصيل مجاناً</span>
-    </span>`;
+        position: relative;
+        top: 10px;
+    ">اشتري عطرين بسعر عطر واحد +توصيل مجاناً</span>`;
        
            document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
            document.querySelectorAll(".list--clear li")[0].innerHTML = ` `;
@@ -178,6 +181,7 @@ if(displayHours >= 8 && period == "مساءً"){
                margin: 10px;
        font-weight: 700;
        font-size: 20px !important;
+       font-family: 'DINNextLTArabic-Bold';
            }
        </style>
    <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
@@ -279,6 +283,7 @@ if(location.href == "https://timurperfumes.com/%D8%A7%D8%A8%D8%B1%D9%8A%D8%A7%D9
             margin: 10px;
     font-weight: 700;
     font-size: 20px !important;
+    font-family: 'DINNextLTArabic-Bold';
         }
     </style>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
@@ -376,6 +381,7 @@ if(displayHours >= 8 && period == "مساءً"){
             margin: 10px;
     font-weight: 700;
     font-size: 20px !important;
+    font-family: 'DINNextLTArabic-Bold';
         }
     </style>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
