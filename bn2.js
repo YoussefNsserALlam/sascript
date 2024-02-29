@@ -1,32 +1,4 @@
-<style>
-    body{
-        background-color: red !important;
-        display: none;
-    }
-    .fo-x{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-</style>
-<span style=" text-align: right;
-width: 100%; color: red;font-size: 1.125rem !important;font-family: imjed, sans-serif !important;">عرض رمضان لمدة 24 ساعة
-    <br>
-    <br>
-    <span style="
-        color: #b0afaf;
-        font-size: .875rem !important;
-    ">اشتري عطرين بسعر عطر واحد +توصيل مجاناً</span>
-    </span>
-<script>
-    let fox_s = document.createElement("div");
-    fox_s.classList.add("fox_s");
-    document.querySelectorAll(".py-3")[2].appendChild(fox_s)
-   document.querySelector(".fox_s").innerHTML = document.querySelectorAll(".py-5")[0].innerHTML;
-   document.querySelectorAll(".py-5")[0].style.display = "none";
-   document.querySelectorAll(".add_to_cart_btn")[0].innerText=`إضافة للسلة`;
-   //////////////////////////////////////
-   let malrt = document.querySelectorAll(".product-footer a");
+let malrt = document.querySelectorAll(".product-footer a");
         for(let i =0; i<malrt.length; i++){
             malrt[i].addEventListener("click", function (){
                 
@@ -378,4 +350,3 @@ if(displayHours >= 8 && period == "مساءً"){
        document.querySelectorAll(".te2")[0].innerHTML = 12-displayHours;
     }
     }, 1000);
-</script>
