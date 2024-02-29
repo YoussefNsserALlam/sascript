@@ -1,4 +1,4 @@
-let malrt = document.querySelectorAll(".product-footer a");
+    let malrt = document.querySelectorAll(".product-footer a");
         for(let i =0; i<malrt.length; i++){
             malrt[i].addEventListener("click", function (){
                 
@@ -253,7 +253,104 @@ if(displayHours >= 8 && period == "مساءً"){
    }, 1250);
         })
 document.querySelectorAll(".product-offer")[0].remove();      
+if(location.href == "https://timurperfumes.com/%D8%A7%D8%A8%D8%B1%D9%8A%D8%A7%D9%84-%D9%85%D9%85%D9%8A%D8%B2/p685325477"){
+    document.querySelectorAll(".product-detials__desc p")[0].innerHTML = ` <style>
+        .tim .te p{
+        font-size: 20px !important;
+    }
+    .modal#special_offer_modal .modal-body .list.offer-steps li:before{
+            display: none !important;
+        }
+        .tim, .pa, .pa2{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: red;
+            font-weight: 700;
+    font-size: 20px !important;
+        }
+        .tim .te{
+            width: 67px;
+            height: 107px;
+            border-radius: 5px;
+            color: red;
+            font-size: 25px;
+            box-shadow: 0px 0px 10px #00000066;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 20px !important;
+            margin:10px;
+        }
+        .pa2 h1{
+            margin: 10px;
+    font-weight: 700;
+    font-size: 20px !important;
+        }
+    </style>
+<div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
+<div class="tim">
+    <div class="te"><p class="te3"></p></div>
+    
+    <div class="te te1"><p class="te1"></p></div>
+    <div class="te"><p class="te2"></p></div>
+</div>
+<div class="pa">
+    <h4>ثانيه</h4>
+    <h4>دقيقه</h4>
+    <h4>ساعة</h4>
+</div>`
+    setInterval(() => {
+        //حصول على تاريخ ووقت محليين
+const now = new Date();
 
+// الحصول على ساعة من التاريخ
+let hours = now.getHours();
+
+// الحصول على دقائق من التاريخ
+let minutes = now.getMinutes();
+let seconds = now.getSeconds();
+// الحصول على اليوم (AM أو PM) استنادًا إلى قيمة الساعات
+const period = hours >= 12 ? 'مساءً' : 'صباحًا';
+
+// تحويل الساعات إلى صيغة 12 ساعة
+let displayHours = hours % 12 || 12;
+
+// بناء نص الوقت
+const timeString = `${displayHours}:${minutes} ${period}`;
+// طباعة الوقت
+// console.log('الوقت الحالي في المملكة العربية السعودية هو: ' + timeString);
+document.querySelectorAll(".te1")[0].innerHTML = 60 - minutes;
+document.querySelectorAll(".te3")[0].innerHTML = 60 - seconds;
+// document.querySelector(".pa2 h1").innerHTML = `   سينتهي العرض خلال :`;
+if(displayHours >= 1 && period == "مساءً"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
+}
+if(displayHours >= 6 && period == "مساءً"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
+}
+if(displayHours >= 11 && period == "صباحًا"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelectorAll(".te2")[0].innerHTML = 15-displayHours;
+}
+if(displayHours >= 6 && period == "صباحًا"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelectorAll(".te2")[0].innerHTML = 10-displayHours;
+}
+if(displayHours >= 1 && period == "صباحًا"){
+    // document.querySelector(".pa2 h1").innerHTML = ` سينتهي العرض خلال  : `;
+    document.querySelectorAll(".te2")[0].innerHTML = 5-displayHours;
+}
+if(displayHours >= 8 && period == "مساءً"){
+       document.querySelectorAll(".te2")[0].innerHTML = 12-displayHours;
+    }
+    }, 1000);
+}else{
         document.querySelectorAll(".product-detials__desc p")[3].innerHTML = ` <style>
         .tim .te p{
         font-size: 20px !important;
@@ -350,3 +447,4 @@ if(displayHours >= 8 && period == "مساءً"){
        document.querySelectorAll(".te2")[0].innerHTML = 12-displayHours;
     }
     }, 1000);
+}
