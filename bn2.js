@@ -285,7 +285,29 @@ if(location.href == "https://timurperfumes.com/%D8%A7%D8%A8%D8%B1%D9%8A%D8%A7%D9
     font-size: 20px !important;
     font-family: 'DINNextLTArabic-Bold';
         }
+        .inventory-content>#variant-inventory i:after{
+            position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #108043;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: .25;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+        }
+        @keyframes scale{0%{opacity:.5;transform:scale(.8);}to{opacity:0;transform:scale(1.8);}}
     </style>
+    <p><div id="variant-inventory" class="">
+<i class="sicon-check-circle rtl:ml-1.5 ltr:mr-1.5"></i>
+متوفر
+</div></p>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
 <div class="tim">
     <div class="te"><p class="te3"></p></div>
@@ -383,7 +405,29 @@ if(displayHours >= 8 && period == "مساءً"){
     font-size: 20px !important;
     font-family: 'DINNextLTArabic-Bold';
         }
+        .inventory-content>#variant-inventory i:after{
+            position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #108043;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: .25;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+        }
+        @keyframes scale{0%{opacity:.5;transform:scale(.8);}to{opacity:0;transform:scale(1.8);}}
     </style>
+    <p><div id="variant-inventory" class="">
+<i class="sicon-check-circle rtl:ml-1.5 ltr:mr-1.5"></i>
+متوفر
+</div></p>
 <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
 <div class="tim">
     <div class="te"><p class="te3"></p></div>
