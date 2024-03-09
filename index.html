@@ -1,267 +1,642 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  style="
+    --bs-primary: #96408e;
+    --bs-primary-rgb: 150, 64, 142;
+    font-family: Tajawal, sans-serif;
+  "
+>
   <head>
-    <meta charset="UTF-8" />
-    <title>CSS</title>
-    <!-- <link rel="stylesheet" href="css/master.css" /> -->
-  </head>
-  <style>
-    * {
-  box-sizing: border-box;
-  margin: 0;
-}
-.container {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box , .box2 {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  transform-origin: right center;
-  animation: test infinite  7s;
-}
-@keyframes test{
-    0%{
-    transform: none;
-    }
-    50%{
-    transform: translateX(-100%) rotateY(-180deg);
-    }
-    75%{
-    transform: translateX(-100%) rotateY(-180deg);
-    }
-    100%{
-    transform: none;
-    }
-}
-.box .face , .box2 .face{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  backface-visibility: hidden;
-}
-.box .front, .box2 .front {
-  background-color: red;
-}
-.box .back {
-  background-color: green;
-  transform: rotateY(180deg);
-}
-.box img, .box2 img{
-    box-shadow: 2px 1px 20px #00000070;
-    border-radius: 11px;
-}
-.box3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #0000005e;
-    position: fixed;
-    top: 0;
-    height: 0;
-    overflow: hidden;
-}
-.alra{
-    width: 0;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 19px #f5deb399;
-    height: 0;
-    overflow: hidden;
-}
-.myactiv{
-    width: 90%;
-    opacity: 1;
-    height: 250px;
-    transition: .5s;
-}
-.esm{
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: end;
-    align-items: center;
-    width: 100%;
-}
-.esm h2{
-    font-size: 30px;
-}
-.esm img{
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 9px #00000040;
-    margin: 14px;
-}
-.l-r{
-    width: 98%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-}
-.l-r div i{
-    /* width:30px;
-    height: 30px; */
-    /* border-radius: 50%; */
-    color: #f39c12;
-    /* background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 40px;
-    cursor: pointer;
-}
-.loc{
-    position: absolute;
-    top: -249%;
-    left: 88%;
-    color: red;
-    font-size: 40px;
-    /* transform: translate(-9%, -30%); */
-    cursor: pointer;
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
 
-}
-.fa-star{
-    color: #f39c12;
-}
-.tx-1 p{
-    font-size: 30px;
-}
-.mybutton{
-    position: relative;
-    left: 50px;
-    font-size: 25px;
-    /* width: 150px; */
-    height: 41px;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    animation: but infinite linear 2s;
-    transition: .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-@keyframes but{
-    0%{
-    padding: 20px;
-    }
-    50%{
-        padding: 30px;
-    
-    }
-    100%{
-        padding: 20px;
-    
-    }
-}
-  </style>
-  <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <div class="container">
-      <div class="box">
-        <img src="https://cdn.salla.sa/ObKxq/8AH7R313E7Z8kRNJWUknTpd1YRyy1QuDGiEqdATv.jpg" class="face front" alt="">
-        <img src="https://cdn.salla.sa/ObKxq/41OmMMlJNrB4mdxLTGOwUDgeRupaCJrZuMOyIGv6.png" class="face back" alt="">
+    <title>زيوت ياسمينا</title>
+
+    <link rel="stylesheet" href="./bootstrap.min.css ">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./font.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,700,900&amp;subset=arabic&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./slid2.css"
+    />
+    <link rel="stylesheet" href="./slid.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <body style="font-family: Tajawal, sans-serif">
+    <style>
+      .wts{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #61CE70;
+        color: white;
+        position: fixed;
+        top: 80%;
+        font-size: 37px;
+        text-align: center;
+        left: 85%;
+      }
+      .wts:hover{
+        color: white;
+      }
+        .x-o{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .x-o ul{
+            width: 53%;
+            direction: rtl;
+            list-style: none;
+            background-color: #eeeeee;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .le-f li span{
+            color: red;
+        }
+        .le-rig li span{
+            color: #03ab10;
+        }
+        .le-f li span{
+            color: red;
+        }
+        .le-rig li span, .le-f li span i{
+            color: #03ab10;
+        }
+        .left-rigth{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            direction: rtl;
+        }
+        .lef{
+            position: relative;
+            left: 62px;
+        }
+        .rig{
+            position: relative;
+            left: -82px;
+        }
+        .fa-check-circle{
+            color: #61CE70;
+        }
+      /* .swiper-wrapper{
+        position: initial;
+      } */
+    </style>
+    <!-- <div class="wts">
+    <a href="https://wa.me/966547099729" class="wts">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div> -->
+    <div class="text-center" style="margin-top: 21px">
+      <img
+        class="img-fluid logo"
+        width="130px"
+        height="115"
+        src="https://cdn.salla.sa/bEGEz/2UUBAe5pf41Q6DHpU3hIIqFXyhXMumOLl8ecFhCB.png"
+      />
+    </div>
+    <h1
+      class="display-5 fw-semibold text-center"
+      style="margin-top: 20px; color: black; font-size: 16px; letter-spacing: 1.5px"
+    >
+    حابب تبدأ مشروع الكتروني ولكن مانت عارف كيف تختار منتجك و وين تنشئ متجر وكيف تسوق له؟ 
+    </h1>
+    <div class="text-center">
+      <img
+        class="img-fluid"
+        width="90%"
+        src="https://www.shutterstock.com/image-photo/empty-wallet-hands-elderly-man-260nw-439390204.jpg"
+        style="max-height: 600px; max-height: 600px;
+        width: 90%;
+        margin-top: 15px;"
+        
+      />
+    </div>
+    <h5 class="fw-semibold text-center" style="color: #f23d5e">
+      <span style="font-size: 33px;">جـ37ـزء</span> تدريبي لمدة سنة
+      <br>
+إستشارات شهريه مباشرة مع المدرب والخبراء..
+    </h5>
+    <!-- <div class="container more-section section" style="margin: 0;">
+      <h4 style="margin-bottom: 13px">
+        كل شخصية تحب تبرز ملامحها وتظهر تميزها
+      </h4>
+      <h4 style="margin-bottom: 13px">
+        وفيه الشخصيات الراقية اللي تحب يكون مظهرها مريح وملفت للناس
+      </h4>
+      <h4 style="margin-bottom: 13px">
+        إذا تحبي تظهري تميزك للناس وتحبي الناس ترتاح لك
+      </h4>
+    </div> -->
+    <div class="container bestsales-section section">
+      <h1 class="display-5 fw-bold text-center">انتبه!</h1>
+      <h4 class="fw-semibold text-center" style="font-size: 17px;">
+تخّسر مشروعك او انك ما تضاعف دخلك بسبب 
+<br>
+عدم وجود خبراء معاك يكونو معاك خطوة بخطوة ؟
+<br>
+<br>
+برنامج الثراء برنامج عملي لمدة سنة كاملة ولقاءات استشارية مباشرة مع الخبراء
+      </h4>
+      <div class="text-center" style="margin-top: 25px; margin-bottom: 25px">
+        <!-- <img
+          class="img-fluid"
+          src="https://www.shutterstock.com/image-photo/business-man-working-260nw-522740974.jpg"
+          style="
+            max-height: 550px;
+            background-color: var(--bs-primary);
+            border-radius: 5px;
+          "
+        /> -->
+      </div>
+      <br>
+      <h3 class="fw-semibold">برنامج الثراء هنا ليساعدك !</h3>
+      <br>
+      <div class="x-o">
+        <ul class="le-f">
+            <li><h3>قبل </h3></li>
+           
+            <li><span>X</span>
+              ما تعرف كيف تختار منتجك
+
+                </li>
+                <br>
+            <li><span>X</span>
+              ما تعرف كيف تنشئ متجر إلكتروني
+
+                </li>
+                <br>
+            <li><span>X</span>
+              ما تعرف كيف تسوق 
+
+                </li>
+                <br>
+            <li><span>X</span>
+              ما تعرف كيف تجيب مبيعات 
+                </li>
+                <br>
+                <li><span>X</span>
+                  ما تعرف كيف تكتب محتويات
+                </li>
+                <br>
+                <li><span>X</span>
+                  ما تعرف تربط SEO
+
+                </li>
+                <br>
+                <li><span>X</span>
+                  ما تعرف تحسب ROAS
+                </li>
+                <br>
+                <li><span>X</span>
+                  ما تعرف كيف تربط PIXEL
+                </li>
+                <br>
+                <li><span>X</span>
+ما تعرف كيف تربط TOOLS التسويقي
+                </li>
+                <br>
+        </ul>
+        <ul class="le-rig">
+            <li><h3>بعد </h3></li>
+            <li><span><i class="fa-solid fa-check"></i></span>
+              بتكون قادر على اختيار منتجك بنفسك
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على إنشاء متجرك الإلكتروني بنفسك
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على التسويق لمتجرك بنفسك
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على إطلاق حملاتك الإعلانية بنفسك
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على كتابه محتويات الإعلانية بنفسك
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على ربط SEO بنفسك 
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على حساب ROAS بنفسك 
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على ربط  PIXEL بنفسك 
+                </li>
+                <br>
+                <li><span><i class="fa-solid fa-check"></i></span>
+                  بتكون قادر على ربط  TOOLS التسويقي بنفسك
+                </li>
+                
+        </ul>
+    </div>
+    <br>
+    <div class="col-to " style="width: 100%; display: flex;
+    justify-content: center;align-items: center;">
+<a
+  class="btn btn-success btn-lg fs-4 fw-bold"
+  role="button"
+  style="/*background: var(--bs-teal);*/ /*border: none;*/"
+  href=""
+  >احجز مكانك</a
+>
+</div>
+<br>
+    <br>
+    <h3>ماذا سوف تتعلم في برنامج الثراء ؟
+    </h3>
+    <br>
+    <div class="left-rigth">
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+      اختيار المنتجات المربحة</div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+      ربط الأدوات التسويقية
+      </div>
+      <br>
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          التسويق الإلكتروني 
+      </div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          استراتيجيات كتابه المحتويات 
+      
+      </div>
+      <br>
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          استراتيجيات المبيعات
+      
+      </div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          إطلاق الحملات الإعلانية 
+      
+      </div>
+      <br>
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          الاستيراد من الصين وأنت في بيتك
+      </div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          خطط والتسعير 
+      
+      </div>
+      <br>
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          الميز التنافسيه
+      </div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          اختيار المنتجات المربحة 
+      
+      </div>
+      <br>
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          ربط الأدوات التسويقية
+      
+      </div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          ربط البكسلات 
+      
+      </div>
+      <br>
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          تحسين SEO
+      
+      </div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          حساب ROAS
+      
+      </div>
+      <br>
+      <div class="lef"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          عرض المنتجات او الخدمات 
+      
+      
+      </div>
+      <br>
+      <div class="rig"><span><i aria-hidden="true" class="fas fa-check-circle"></i></span>
+          وصف المنتج او الخدمة المقدمة
+      </div>
+      <br>
+          </div>
+          <br>
+    <br>
+      <!-- <p class="lead" style="font-weight: 400; margin-top: 51px">
+        <span class="fw-bold">مكونات الزيت:</span>&nbsp;مجموعة من الزيوت المركزه
+        مثل زيت النارجيل والجرجير ومجموعه من الاعشاب، اكليل الجبل
+      </p>
+      <p class="lead" style="font-weight: 400; margin-top: 15px">
+        <span class="fw-bold">الحجم:</span>&nbsp;200 مل
+      </p> -->
+      <div class="text-center" style="margin-top: 25px; margin-bottom: 25px">
+        <img
+          class="img-fluid"
+          src="https://www.shutterstock.com/image-photo/business-development-success-growing-growth-260nw-1382853461.jpg"
+          style="
+            max-height: 550px;
+            background-color: var(--bs-primary);
+            border-radius: 5px;
+          "
+        />
+      </div>
+      <br>
+          <div class="col-to " style="width: 100%; display: flex;
+          justify-content: center;align-items: center;">
+      <a
+        class="btn btn-success btn-lg fs-4 fw-bold"
+        role="button"
+        style="/*background: var(--bs-teal);*/ /*border: none;*/"
+        href=""
+        >احجز مكانك</a
+      >
+    </div>
+    <br>
+      <div class="more-section">
+        
+        <h3 class="fw-semibold text-center">تفاصيل البرنامج:</h3>
+        <p class="lead font-monospace fw-semibold" style="color: #f23d5e;">◼
+          مسجلة معاك لمدة سنة
+        </p>
+        <p class="lead font-monospace fw-semibold" style="color: #f23d5e;">◼
+          ويوجد لقاءات استشارية مع المدرب بث مباشر بينك وبين المدرب
+        </p>
+        <p class="lead font-monospace fw-semibold" style="color: #f23d5e;
+        font-size: 17px;">◼
+        <span>
+          تقدر تشاهد الدورة عدة  <span>مرات لا محدودة</span></span>
+        </p>
       </div>
     </div>
-    <button class="mybutton">اراء عملائنا</button>
-    <div class="box3">
-        <!-- <div class="loc"> X</div> -->
-        
-        <div class="l-r">
-            <i class="fa-solid fa-circle-xmark loc"></i>
-            <div><i class="fa-solid fa-circle-right"></i></div>
-            <div> <i class="fa-solid fa-circle-left"></i> </div>
-        </div>
-        <div class="alra myactiv">
-            <div class="esm">
-                <h2>
-                يوسف علام 
-                <br>
-                <br>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                </h2>
-            <img src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png" alt="">
-        </div>
-        <br>
-        <div class="tx-1"><p>العطر ممتاااز جدا جدا</p></div>
-        <br>
-        </div>
-        <div class="alra">
-            <div class="esm">
-                <h2>
-                
-                ابراهيم محمد
-                <br>
-                <br>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                
-                </h2>
-            <img src="https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png" alt="">
-        </div>
-        <br>
-        <div class="tx-1"><p>عطر رائع ماشاء الله</p></div>
-        <br>
-        </div>
+    <div class="srf">
+      <p>حقيقةً هذا البرنامج ما كنت لأقدمه بأقل من 1000 ريال ، لأن القيمة التي يحتوي عليها جدًا عالية.
+      </p>
+      <p>لكن ما رح أقدم لك إياه بهذا السعر لسببين:</p>
+      <p> 1. لأني أقدر رغبتك في التعلم المستمر وتحقيق ثروة في حياتك ورفع دخلك.</p>
+      <p> 2. لأني أريد أن أخدم بهذه المعرفة التحولية أكبر عدد ممكن من الناس… لذلك أقدمه لك اليوم
+      </p>
+      <p style="font-size: 30px; color: red;">بـ 270 ريال فقط</p>
+      <!-- <p style="font-size: 20px; color: green;">($79 فقط)</p> -->
+      <!-- <p>مددنا العرض حتى يوم الأحد، 3 مارس، 2024</p> -->
     </div>
+    <!-- <div
+      class="container section testimonials-section"
+      style="padding-top: 33px; padding-bottom: 20px"
+    >
+      <h1 class="display-5 fw-bold text-center" style="padding-top: 0px">
+        تجارب عملائنا خير شهيد
+      </h1>
+      <h4 class="fw-semibold text-center" style="margin-bottom: 36px">
+        <strong>رأي الأستاذات القديرات</strong>
+      </h4>
+      <p
+        class="lead font-monospace fs-4 fw-semibold text-center"
+        style="color: var(--bs-primary)"
+      >
+        <strong>رأي الأستاذة الهنوف الطويان عن منتجنا</strong>
+      </p>
+      <div class="text-center" style="margin-bottom: 20px">
+        <iframe
+          allowfullscreen=""
+          frameborder="0"
+          src="https://www.youtube.com/embed/tcKpmeo50C4"
+          class="youtube-vidoes"
+          width="560"
+          height="315"
+        ></iframe>
+      </div>
+      <div class="text-center">
+        <iframe
+          allowfullscreen=""
+          frameborder="0"
+          src="https://www.youtube.com/embed/Lzwsa0xjWUc"
+          class="youtube-vidoes"
+          width="560"
+          height="315"
+        ></iframe>
+      </div>
+      <p
+        class="lead font-monospace fs-4 fw-semibold text-center"
+        style="margin-top: 44px; color: var(--bs-primary)"
+      >
+        <strong>رأي الأستاذة ريماس المنصور عن منتجنا</strong>
+      </p>
+      <div class="text-center" style="margin-bottom: 20px">
+        <iframe
+          allowfullscreen=""
+          frameborder="0"
+          src="https://www.youtube.com/embed/Z6GCiw_JgFY"
+          class="youtube-vidoes"
+          width="560"
+          height="315"
+        ></iframe>
+      </div>
+      <p
+        class="lead font-monospace fs-4 fw-semibold text-center"
+        style="margin-top: 44px; color: var(--bs-primary)"
+      >
+        <strong>رأي الأستاذة هيفاء الطويان عن منتجنا</strong>
+      </p>
+      <div class="text-center" style="margin-bottom: 20px">
+        <iframe
+          allowfullscreen=""
+          frameborder="0"
+          src="https://www.youtube.com/embed/EuTarFDBq-k"
+          class="youtube-vidoes"
+          width="560"
+          height="315"
+        ></iframe>
+      </div>
+      <p
+        class="lead font-monospace fs-4 fw-semibold text-center"
+        style="margin-top: 44px; color: var(--bs-primary)"
+      >
+        <strong>رأي الدكتورة حسان عن منتجنا</strong>
+      </p>
+      <div class="text-center" style="margin-bottom: 20px">
+        <iframe
+          allowfullscreen=""
+          frameborder="0"
+          src="https://www.youtube.com/embed/pLEi4o4X6Qk"
+          class="youtube-vidoes"
+          width="560"
+          height="315"
+        ></iframe>
+      </div> -->
+      <h1 class="text-center" style="margin-top: 43px">آراء ونتائج عملائنا</h1>
+      <!-- Start: Simple Slider -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="allam-slid">
+              <img src="https://mohammedbawazir.com/wp-content/uploads/2023/07/user-1.webp" alt="">
+              <p>
+                  وإن كانت قصيرة الوقت إلا أنها كانت غالية المعلومات على عكس كثيرة من الدورات، طويلة الوقت قليلة الثمرة والفائدة. قاعدتين في الدروة زلزلتني وغيرت مساري من اليمين للشمال. وقد جنيت ربح بنحو 
+              </p>
+              <br>
+              <p class="ee-r">حمزة محمد</p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="allam-slid">
+              <img src="https://mohammedbawazir.com/wp-content/uploads/2023/07/user-1.webp" alt="">
+              <p>
+                  وإن كانت قصيرة الوقت إلا أنها كانت غالية المعلومات على عكس كثيرة من الدورات، طويلة الوقت قليلة الثمرة والفائدة. قاعدتين في الدروة زلزلتني وغيرت مساري من اليمين للشمال. وقد جنيت ربح بنحو 
+              </p>
+              <br>
+              <p class="ee-r">حمزة محمد</p>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="allam-slid">
+              <img src="https://mohammedbawazir.com/wp-content/uploads/2023/07/user-1.webp" alt="">
+              <p>
+                  وإن كانت قصيرة الوقت إلا أنها كانت غالية المعلومات على عكس كثيرة من الدورات، طويلة الوقت قليلة الثمرة والفائدة. قاعدتين في الدروة زلزلتني وغيرت مساري من اليمين للشمال. وقد جنيت ربح بنحو 
+              </p>
+              <br>
+              <p class="ee-r">حمزة pl.i</p>
+          </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End: Simple Slider -->
+      <!-- <h1 class="fw-bold text-center" style="margin-top: 41px">عرض العيد:</h1>
+      <h2 class="text-center">199 ريال فقط شامل الشحن والضريبة!</h2>
+      <div class="text-center">
+        <img class="tamara-icon" src="./img/tamara-icon.png" />
+      </div>
+      <h2 class="text-center" style="margin-top: 10px">
+        قسطيها ولا يفوتك العرض
+      </h2>
+    </div> -->
+    <div class="text-center btns-container" style="
+      position: fixed;
+      top: 95%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+      width: 100%;
+      background: white;
+      padding: 17px;
+      z-index: 10000000;">
+      <a
+        class="btn btn-success btn-lg fs-4 fw-bold"
+        role="button"
+        style="/*background: var(--bs-teal);*/ /*border: none;*/ width: 90%; font-size: 24px !important; "
+        href=""
+        >احجز مكانك</a
+      >
+      <!-- <a
+        class="btn btn-success btn-lg fs-4 fw-bold"
+        role="button"
+        style="/*background: var(--bs-teal);*/ /*border: none;*/"
+        href="https://wa.me/966547099729"
+        ><i class="fab fa-whatsapp"></i>&nbsp;واتساب خدمة العملاء</a
+      > -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="./bootstrap.min.js"></script>
+    <script src="./slid2.js"></script>
+    <script src="./slid.js"></script>
+
     <script>
-        var pageLength = Math.max(
-  document.body.scrollHeight, document.body.offsetHeight, 
-  document.documentElement.clientHeight, document.documentElement.scrollHeight, 
-  document.documentElement.offsetHeight
-);
-let click = 0;
-let loc = document.querySelector(".loc");
-document.querySelector(".mybutton").addEventListener("click", function (){
-    click++;
-    if(click == 1){
-        let ara = document.querySelector(".box3");
-ara.style.height = `${pageLength}px`;
-    }
-    loc.addEventListener("click", function(){
-    click = 0;
-        let ara = document.querySelector(".box3");
-ara.style.height = 0;
-})
-let left = document.querySelectorAll(".l-r div")[0];
-let right = document.querySelectorAll(".l-r div")[1];
-let slcAllr = document.querySelectorAll(".alra");
-let myclic = 0;
-left.addEventListener("click", function(){
-    myclic++
-    for(let i = 0; i < slcAllr.length; i++){
-    slcAllr[i].classList.remove("myactiv");
-    slcAllr[myclic].classList.add("myactiv");
-}
-})
-right.addEventListener("click", function(){
-    myclic--
-    for(let i = 0; i < slcAllr.length; i++){
-    slcAllr[i].classList.remove("myactiv");
-    slcAllr[myclic].classList.add("myactiv");
-}
-})
-})
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+          //CHL22MJC77U2H86LJBO0
+        ttq.load("CGU6FNBC77U3UDPKLNO0");
+        ttq.page();
+      })(window, document, "ttq");
     </script>
   </body>
 </html>
