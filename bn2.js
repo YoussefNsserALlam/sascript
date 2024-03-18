@@ -1,4 +1,14 @@
-    let malrt = document.querySelectorAll(".product-footer a");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <script>
+            let malrt = document.querySelectorAll(".product-footer a");
         for(let i =0; i<malrt.length; i++){
             malrt[i].addEventListener("click", function (){
                 
@@ -61,7 +71,7 @@
     font-family: 'DINNextLTArabic-Bold';
         }
     </style>
-<div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
+<div class="pa2"><h1>متبقى على نهاية عرض رمضان</h1></div>
 <div class="tim">
     <div class="te"><p class="te3"></p></div>
     
@@ -184,7 +194,7 @@ if(displayHours >= 8 && period == "مساءً"){
        font-family: 'DINNextLTArabic-Bold';
            }
        </style>
-   <div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
+   <div class="pa2"><h1>متبقى على نهاية عرض رمضان</h1></div>
    <div class="tim">
        <div class="te"><p class="te3"></p></div>
        
@@ -428,7 +438,7 @@ if(displayHours >= 8 && period == "مساءً"){
 <i class="sicon-check-circle rtl:ml-1.5 ltr:mr-1.5"></i>
 متوفر
 </div></p>
-<div class="pa2"><h1>متبقي على نهاية العرض</h1></div>
+<div class="pa2"><h1>متبقى على نهاية عرض رمضان</h1></div>
 <div class="tim">
     <div class="te"><p class="te3"></p></div>
     
@@ -488,3 +498,6 @@ if(displayHours >= 8 && period == "مساءً"){
     }
     }, 1000);
 }
+    </script>
+</body>
+</html>
