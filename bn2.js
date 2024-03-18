@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="text">
-    <script>
-            let malrt = document.querySelectorAll(".product-footer a");
+ let malrt = document.querySelectorAll(".product-footer a");
         for(let i =0; i<malrt.length; i++){
             malrt[i].addEventListener("click", function (){
                 
@@ -498,6 +488,3 @@ if(displayHours >= 8 && period == "مساءً"){
     }
     }, 1000);
 }
-    </script>
-</body>
-</html>
