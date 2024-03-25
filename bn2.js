@@ -12,7 +12,7 @@ for(let i =0; i<malrt.length; i++){
 </svg>`;
 document.querySelectorAll(".header__title p")[0].innerHTML = `<span style="
 color: black;
-font-size: 1rem !important;
+font-size: .9rem !important;
 position: relative;
 top: 10px;
 ">احصل على عطرك الاخر بــ <span style="color:red">120 ريال فقط</span> + الشحن مجانا 
