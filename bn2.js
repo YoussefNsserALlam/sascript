@@ -17,7 +17,7 @@ position: relative;
 top: 10px;
 ">احصل على عطرك الاخر بــ <span style="color:red">120 ريال فقط</span> + الشحن مجانا 
 <br>
-        <span style="color:#9E9FA5">(سيتم تحديد السعر بعد اضافة المنتج الى السله)</span>
+        <span style="color:#9E9FA5">(سيتم تحديث السعر بعد اضافة المنتج الى السله)</span>
 </span>`;
 
 document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
@@ -142,7 +142,7 @@ position: relative;
 top: 10px;
 ">احصل على عطرك الاخر بــ <span style="color:red">120 ريال فقط</span> + الشحن مجانا 
 <br>
-        <span style="color:#9E9FA5">(سيتم تحديد السعر بعد اضافة المنتج الى السله)</span>
+        <span style="color:#9E9FA5">(سيتم تحديث السعر بعد اضافة المنتج الى السله)</span>
 </span>`;
 
    document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
