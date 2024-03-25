@@ -15,7 +15,7 @@ color: black;
 font-size: 1rem !important;
 position: relative;
 top: 10px;
-">احصل على عطرك الاخر بــ <span style="color:red">120 ريال فقط</span> + الشحن مجانا 
+">احصل على عطرك الاخر بــ <span style="color:#9E9FA5">120 ريال فقط</span> + الشحن مجانا 
 <br>
         <span >(سيتم تحديد السعر بعد اضافة المنتج الى السله)</span>
 </span>`;
