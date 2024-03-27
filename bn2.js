@@ -1,3 +1,4 @@
+
 let malrt = document.querySelectorAll(".product-footer a");
 for(let i =0; i<malrt.length; i++){
     malrt[i].addEventListener("click", function (){
@@ -15,7 +16,11 @@ color: black;
 font-size: .9rem !important;
 position: relative;
 top: 10px;
-">احصل على عطرك الاخر بــ <span style="color:red">120 ريال فقط</span> + الشحن مجانا 
+">احصل على عطرك الاخر بــ 
+<span style="color:red;font-size:17px;">
+120 ريال فقط
++ الشحن مجانا 
+</span>
 <br>
         <span style="color:#9E9FA5">(سيتم تحديث السعر بعد اضافة المنتج الى السله)</span>
 </span>`;
@@ -140,7 +145,10 @@ color: black;
 font-size: .9rem !important;
 position: relative;
 top: 10px;
-">احصل على عطرك الاخر بــ <span style="color:red">120 ريال فقط</span> + الشحن مجانا 
+">احصل على عطرك الاخر بــ <span style="color:red; font-size:17px;">
+120 ريال فقط
++ الشحن مجانا 
+</span> 
 <br>
         <span style="color:#9E9FA5">(سيتم تحديث السعر بعد اضافة المنتج الى السله)</span>
 </span>`;
