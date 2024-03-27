@@ -17,7 +17,7 @@ font-size: .9rem !important;
 position: relative;
 top: 10px;
 ">احصل على عطرك الاخر بــ 
-<span style="color:red;font-size:17px;">
+<span style="color:red;">
 120 ريال فقط
 + الشحن مجانا 
 </span>
@@ -145,7 +145,7 @@ color: black;
 font-size: .9rem !important;
 position: relative;
 top: 10px;
-">احصل على عطرك الاخر بــ <span style="color:red; font-size:17px;">
+">احصل على عطرك الاخر بــ <span style="color:red;">
 120 ريال فقط
 + الشحن مجانا 
 </span> 
