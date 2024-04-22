@@ -4,7 +4,7 @@ for(let i =0; i<malrt.length; i++){
     malrt[i].addEventListener("click", function (){
         // color: #9E9FA5;
         setTimeout(() => {
-            document.querySelectorAll(".header__title span")[0].innerHTML =  "عرض العيد لمدة 24ساعة"
+            document.querySelectorAll(".header__title span")[0].innerHTML =  "العرض  لمدة 24ساعة"
             document.querySelector(".header__icon").innerHTML = `
             
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -68,7 +68,7 @@ font-size: 20px !important;
 font-family: 'DINNextLTArabic-Bold';
 }
 </style>
-<div class="pa2"><h1>متبقى على نهاية عرض العيد</h1></div>
+<div class="pa2"><h1>متبقى على نهاية العرض </h1></div>
 <div class="tim">
 <div class="te"><p class="te3"></p></div>
 
@@ -133,7 +133,7 @@ document.querySelectorAll(".te2")[1].innerHTML = 12-displayHours;
 }
 document.querySelectorAll(".mobile-webview-hide a")[2].addEventListener("click", function (){
     setTimeout(() => {
-        document.querySelectorAll(".header__title span")[0].innerHTML =  "عرض العيد لمدة 24ساعة"
+        document.querySelectorAll(".header__title span")[0].innerHTML =  "العرض  لمدة 24ساعة"
                document.querySelector(".header__icon").innerHTML = `
                
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -196,7 +196,7 @@ font-size: 20px !important;
 font-family: 'DINNextLTArabic-Bold';
    }
 </style>
-<div class="pa2"><h1>متبقى على نهاية عرض العيد</h1></div>
+<div class="pa2"><h1>متبقى على نهاية العرض </h1></div>
 <div class="tim">
 <div class="te"><p class="te3"></p></div>
 
@@ -440,7 +440,7 @@ animation-iteration-count: infinite;
 <i class="sicon-check-circle rtl:ml-1.5 ltr:mr-1.5"></i>
 متوفر
 </div></p>
-<div class="pa2"><h1>متبقى على نهاية عرض العيد</h1></div>
+<div class="pa2"><h1>متبقى على نهاية العرض </h1></div>
 <div class="tim">
 <div class="te"><p class="te3"></p></div>
 
