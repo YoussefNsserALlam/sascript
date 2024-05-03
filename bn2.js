@@ -24,7 +24,8 @@ top: 10px;
 <br>
         <span style="color:#9E9FA5">(سيتم تحديث السعر بعد اضافة المنتج الى السله)</span>
 </span>`;
-
+document.querySelectorAll(".list--clear li")[1].innerHTML = `
+  `;
 document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
 document.querySelectorAll(".list--clear li")[0].innerHTML = ` `;
                 document.querySelectorAll(".list--clear li")[1].style.cssText = `width: 89%; position: relative;
