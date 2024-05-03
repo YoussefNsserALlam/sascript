@@ -56,7 +56,7 @@ top: 10px;
 <span style="color:black;">+ الشحن مجانا </span>
 <br>
         <span style="color:#9E9FA5">(تضيفهم للسلة ويتفعل معك العرض تلقائي)</span>
-</span>``;
+</span>`;
 
    document.querySelectorAll(".modal-body h4")[0] .innerHTML = " ";
    document.querySelectorAll(".list--clear li")[0].innerHTML = ` `;
