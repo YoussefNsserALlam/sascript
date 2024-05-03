@@ -59,56 +59,7 @@ top: 10px;
                    document.querySelectorAll(".list--clear li")[1].style.cssText = `width: 89%; position: relative;
 top: -51px;`;
    document.querySelectorAll(".list--clear li")[1].innerHTML = `
-<style>
-.tim .te p{
-font-size: 20px !important;
-}
-.modal#special_offer_modal .modal-body .list.offer-steps li:before{
-       display: none !important;
-   }
-   .tim, .pa, .pa2{
-       width: 100%;
-       display: flex;
-       justify-content: space-around;
-       flex-wrap: wrap;
-       color: red;
-       font-weight: 700;
-font-size: 20px !important;
-   }
-   .tim .te{
-       width: 67px;
-       height: 107px;
-       border-radius: 5px;
-       color: red;
-       font-size: 25px;
-       box-shadow: 0px 0px 10px #00000066;
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       flex-direction: column;
-       font-weight: 700;
-       font-size: 20px !important;
-       margin:10px;
-   }
-   .pa2 h1{
-       margin: 10px;
-font-weight: 700;
-font-size: 20px !important;
-font-family: 'DINNextLTArabic-Bold';
-   }
-</style>
-<div class="pa2"><h1>متبقى على نهاية العرض </h1></div>
-<div class="tim">
-<div class="te"><p class="te3"></p></div>
-
-<div class="te te1"><p class="te1"></p></div>
-<div class="te"><p class="te2"></p></div>
-</div>
-<div class="pa">
-<h4>ثانيه</h4>
-<h4>دقيقه</h4>
-<h4>ساعة</h4>
-</div>`;
+ `;
 setInterval(() => {
    //حصول على تاريخ ووقت محليين
 const now = new Date();
