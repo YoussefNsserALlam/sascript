@@ -47,7 +47,7 @@ font-size: .9rem !important;
 position: relative;
 top: 10px;
 ">احصل على عطرك الاخر بــ <span style="color:red;">
-120 ريال فقط
+99 ريال فقط
 + الشحن مجانا 
 </span> 
 <br>
